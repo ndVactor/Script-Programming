@@ -95,7 +95,7 @@ EXIT /B
     ::plus 2
     ECHO 2100 plusII 
     set IQANfile="X:\Workgroup\Programming\3.2) Plus II\1) Current Programs\2100i V1 R66.idax"
-    set IQANscript="C:\Users\NDepcik\Desktop\files\IQAN\IQANscriptEx\plusII\getPArm.issx"
+    set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\PlusII.issx"
     EXIT /B
 :switchPlusIII
     ::plus 3
