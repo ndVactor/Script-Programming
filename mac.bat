@@ -38,7 +38,7 @@ setlocal enabledelayedexpansion
     set count=0
     for /F "usebackq tokens=1" %%B in ("temp.txt") do (
         set /a count+=1
-        if !IDAddress!==-1 CALL :conditionCheck !count! %%A 
+        if !IDAddress!==-1 CALL :conditionCheck !count! %%B 
     )
 
 :: delete txt file 
