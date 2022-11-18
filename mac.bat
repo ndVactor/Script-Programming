@@ -13,6 +13,10 @@ setlocal enabledelayedexpansion
     set IDAddress=-1
     set macAdd=-1
     set pingLoop=-1
+    set worOrder=0
+    set name=NULL
+    set outputFile="X:\Workgroup\Programming\Script Iqan\Script Programming\Output Folder\Output.htm"
+    set truckConfigFile=NULL
 
     :: to do have c# application send args to batch file
     @REM ECHO switch%~1
@@ -32,7 +36,7 @@ setlocal enabledelayedexpansion
     )
 
     set count=0
-    for /F "usebackq tokens=1" %%A in ("temp.txt") do (
+    for /F "usebackq tokens=1" %%B in ("temp.txt") do (
         set /a count+=1
         if !IDAddress!==-1 CALL :conditionCheck !count! %%A 
     )
@@ -94,8 +98,9 @@ EXIT /B
 :switchPlusII
     ::plus 2
     ECHO 2100 plusII 
-    set IQANfile="X:\Workgroup\Programming\3.2) Plus II\1) Current Programs\2100i V1 R66.idax"
+    set IQANfile="X:\Workgroup\Programming\3.2) Plus II\1) Current Programs\2100i V1 R67.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\PlusII.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchPlusIII
     ::plus 3
@@ -139,7 +144,7 @@ EXIT /B
     set IQANfile="X:\Workgroup\Programming\1.3) FLXX\1) Current Program\FLXX V0 R19.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script ProgrammingFLXX\FLXX.issx"
     EXIT /B
-    :switchTRXX
+:switchTRXX
     ::TRXX      ::TODO change for bluetooth and when we start building
     ECHO TRXX
     set IQANfile="X:\Workgroup\Programming\1.6) TRXX\1) Current\Trailer V0 R3.idax"
@@ -148,7 +153,7 @@ EXIT /B
 :switchParadigm
     ::paradigm
     ECHO paradigm
-    set IQANfile="X:\Workgroup\Programming\8) Paradigm\1) Current Program\ParaDIGm V3 R18 (TruVac).idax"
+    set IQANfile="X:\Workgroup\Programming\8) Paradigm\1) Current Program\ParaDIGm V3 R22 (TruVac).idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\paradigm\paradigm.issx"
     EXIT /B
 :switchGuzzler
