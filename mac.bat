@@ -107,60 +107,70 @@ EXIT /B
     ECHO 2100 plusIII
     set IQANFile="X:\Workgroup\Programming\3.3) Plus III\1) Current Programs\2200i V0 R4 .idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\plusIII\plusIII.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusIII\Variables.ini"
     EXIT /B
 :switchRamjetII
     ::ramjet II
     ECHO ramjet II 
     set IQANFile="X:\Workgroup\Programming\7.2) RamJET II\1) Current Programs\RamJet V0 R42.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\ramjetII\ramjetII.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchImpact
     ::impact    
     ECHO impact
     set IQANfile="X:\Workgroup\Programming\6.2) Impact\1) Current Program\Impact V0 R51.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\impact\impact.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchHXX
     :: hxx
     ECHO HXX
     set IQANFile="X:\Workgroup\Programming\1) HXX\1) Current Program\HXX V23 R43 (TruVac Logo).idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\Hxx\HXX.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchQX
     ::QX
     ECHO QX
     set IQANfile="X:\Workgroup\Programming\1.2) QX-HXX II\1) Current Programs\HXX II Gen 2 V0 R30(TruVac) Old CAT Pump Motor.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\QX\QX.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchAPXX
     ::APXX
     ECHO APXX
     set IQANfile="X:\Workgroup\Programming\1.5) APXX\1) Current Program\APXX V0 R2.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\APXX\APPX.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchFLXX
     ::flxx
     ECHO FLXX
     set IQANfile="X:\Workgroup\Programming\1.3) FLXX\1) Current Program\FLXX V0 R19.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script ProgrammingFLXX\FLXX.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchTRXX
     ::TRXX      ::TODO change for bluetooth and when we start building
     ECHO TRXX
     set IQANfile="X:\Workgroup\Programming\1.6) TRXX\1) Current\Trailer V0 R3.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\TRXX\TRXX.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchParadigm
     ::paradigm
     ECHO paradigm
     set IQANfile="X:\Workgroup\Programming\8) Paradigm\1) Current Program\ParaDIGm V3 R22 (TruVac).idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\paradigm\paradigm.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchGuzzler
     ::Guzzler       ::TODO change for CAN
     ECHO Guzzler
     set IQANfile="X:\Workgroup\Programming\2) Guzzler\1) Current Program\Guzzler V0 R4.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\Guzzler\guzzler.issx"
+    set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchDefult
     ::defult
