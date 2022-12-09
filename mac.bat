@@ -98,7 +98,7 @@ EXIT /B
 :switchPlusII
     ::plus 2
     ECHO 2100 plusII 
-    set IQANfile="X:\Workgroup\Programming\3.2) Plus II\1) Current Programs\2100i V1 R67.idax"
+    set IQANfile="X:\Workgroup\Programming\3.2) Plus II\1) Current Programs\2100i V1 R69.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\PlusII.issx"
     set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
@@ -112,14 +112,14 @@ EXIT /B
 :switchRamjetII
     ::ramjet II
     ECHO ramjet II 
-    set IQANFile="X:\Workgroup\Programming\7.2) RamJET II\1) Current Programs\RamJet V0 R42.idax"
+    set IQANFile="X:\Workgroup\Programming\7.2) RamJET II\1) Current Programs\RamJet V0 R43.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\ramjetII\ramjetII.issx"
     set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
 :switchImpact
     ::impact    
     ECHO impact
-    set IQANfile="X:\Workgroup\Programming\6.2) Impact\1) Current Program\Impact V0 R51.idax"
+    set IQANfile="X:\Workgroup\Programming\6.2) Impact\1) Current Program\Impact V0 R54.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\impact\impact.issx"
     set truckConfigFile="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\Variables.ini"
     EXIT /B
