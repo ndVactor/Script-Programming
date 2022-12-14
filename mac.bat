@@ -44,7 +44,14 @@ cls
         if /I "%~1" EQU "TRXX" set "temp=1"
         if !Temp!==1 ( CALL :CAN) Else ( CALL :Ethernet)
         )
-
+::HXX CHECK
+	if /I "%1" EQU "HXX" (
+		set /p input=HXX configured?^(Y/N^)
+		if /I "%input%"=="Y" (
+			ECHO sending IQAN script
+			IQANrun -cif Ethernet -mac %macAdd% -silent -script %IQANFile% %IQANscript%
+		)
+	)
 	set /p input=Transfer files?(Y/N)
 	if /I "%input%"=="Y" ( 
 		Echo Transfering Files) Else (goto end)
