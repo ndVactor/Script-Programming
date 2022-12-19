@@ -44,7 +44,14 @@ cls
         if /I "%~1" EQU "TRXX" set "temp=1"
         if !Temp!==1 ( CALL :CAN) Else ( CALL :Ethernet)
         )
-
+::HXX CHECK
+	if /I "%1" EQU "HXX" (
+		set /p input=HXX configured?^(Y/N^)
+		if /I "%input%"=="Y" (
+			ECHO sending IQAN script
+			IQANrun -cif Ethernet -mac %macAdd% -silent -script %IQANFile% %IQANscript%
+		)
+	)
 	set /p input=Transfer files?(Y/N)
 	if /I "%input%"=="Y" ( 
 		Echo Transfering Files) Else (goto end)
@@ -188,14 +195,14 @@ cls
 :switchQX
     ::QX
     ECHO QX
-    set IQANfile="X:\Workgroup\Programming\1.2) QX-HXX II\1) Current Programs\HXX II Gen 2 V0 R30(TruVac) Old CAT Pump Motor.idax"
+    set IQANfile="X:\Workgroup\Programming\1.2) QX-HXX II\1) Current Programs\HXX II Gen 2 V0 R34.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\QX\QX.issx"
     set truckConfigFile=X:\Workgroup\Programming\Script Iqan\Script Programming\QX\
     EXIT /B
 :switchAPXX
     ::APXX
     ECHO APXX
-    set IQANfile="X:\Workgroup\Programming\1.5) APXX\1) Current Program\APXX V0 R2.idax"
+    set IQANfile="X:\Workgroup\Programming\1.5) APXX\1) Current Program\APXX V0 R3.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\APXX\APPX.issx"
     set truckConfigFile=X:\Workgroup\Programming\Script Iqan\Script Programming\APXX\
     EXIT /B
@@ -209,7 +216,7 @@ cls
 :switchTRXX
     ::TRXX      ::TODO change for bluetooth and when we start building
     ECHO TRXX
-    set IQANfile="X:\Workgroup\Programming\1.6) TRXX\1) Current\Trailer V0 R3.idax"
+    set IQANfile="X:\Workgroup\Programming\1.6) TRXX\1) Current\Trailer V0 R6.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\TRXX\TRXX.issx"
     set truckConfigFile=X:\Workgroup\Programming\Script Iqan\Script Programming\TRXX\
     EXIT /B
@@ -223,7 +230,7 @@ cls
 :switchGuzzler
     ::Guzzler       ::TODO change for CAN
     ECHO Guzzler
-    set IQANfile="X:\Workgroup\Programming\2) Guzzler\1) Current Program\Guzzler V0 R4.idax"
+    set IQANfile="X:\Workgroup\Programming\2) Guzzler\1) Current Program\Guzzler V0 R6.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\Guzzler\guzzler.issx"
     set truckConfigFile=X:\Workgroup\Programming\Script Iqan\Script Programming\Guzzler\
     EXIT /B
