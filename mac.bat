@@ -34,7 +34,7 @@ cls
     if %ERRORLEVEL% NEQ 0 goto switchDefult
     
     TIMEOUT 15
-
+	
 ::communication type
     if /I "%~2" EQU "sim" (
         CALL :simulation 
@@ -55,7 +55,7 @@ cls
 	set /p input=Transfer files?(Y/N)
 	if /I "%input%"=="Y" ( 
 		Echo Transfering Files) Else (goto end)
-::  rename files
+:fileManipulation
     CALL :parseINI
     CALL :renameFiles
 	call :moveFiles
