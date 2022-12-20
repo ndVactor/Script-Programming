@@ -55,7 +55,7 @@ cls
 	set /p input=Transfer files?(Y/N)
 	if /I "%input%"=="Y" ( 
 		Echo Transfering Files) Else (goto end)
-:fileManipulation
+::file Manipulation
     CALL :parseINI
     CALL :renameFiles
 	call :moveFiles
@@ -160,7 +160,7 @@ cls
 :switchPlusII
     ::plus 2
     ECHO 2100 plusII 
-    set IQANfile="X:\Workgroup\Programming\3.2) Plus II\1) Current Programs\2100i V1 R70.idax"
+    set IQANfile="X:\Workgroup\Programming\3.2) Plus II\1) Current Programs\2100i V1 R71.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\PlusII.issx"
     set truckConfigFile=X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\
     EXIT /B
