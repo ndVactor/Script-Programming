@@ -209,7 +209,7 @@ cls
 :switchFLXX
     ::flxx
     ECHO FLXX
-    set IQANfile="X:\Workgroup\Programming\1.3) FLXX\1) Current Program\FLXX V0 R19.idax"
+    set IQANfile="X:\Workgroup\Programming\1.3) FLXX\1) Current Program\FLXX V0 R20.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\FLXX\FLXX.issx"
     set truckConfigFile=X:\Workgroup\Programming\Script Iqan\Script Programming\FLXX\
     EXIT /B
