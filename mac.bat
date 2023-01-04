@@ -34,7 +34,7 @@ cls
     if %ERRORLEVEL% NEQ 0 goto switchDefult
     
     TIMEOUT 15
-
+	
 ::communication type
     if /I "%~2" EQU "sim" (
         CALL :simulation 
@@ -55,7 +55,7 @@ cls
 	set /p input=Transfer files?(Y/N)
 	if /I "%input%"=="Y" ( 
 		Echo Transfering Files) Else (goto end)
-::  rename files
+::file Manipulation
     CALL :parseINI
     CALL :renameFiles
 	call :moveFiles
@@ -160,7 +160,7 @@ cls
 :switchPlusII
     ::plus 2
     ECHO 2100 plusII 
-    set IQANfile="X:\Workgroup\Programming\3.2) Plus II\1) Current Programs\2100i V1 R69.idax"
+    set IQANfile="X:\Workgroup\Programming\3.2) Plus II\1) Current Programs\2100i V1 R72.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\PlusII.issx"
     set truckConfigFile=X:\Workgroup\Programming\Script Iqan\Script Programming\plusII\
     EXIT /B
@@ -174,14 +174,14 @@ cls
 :switchRamjetII
     ::ramjet II
     ECHO ramjet II 
-    set IQANFile="X:\Workgroup\Programming\7.2) RamJET II\1) Current Programs\RamJet V0 R43.idax"
+    set IQANFile="X:\Workgroup\Programming\7.2) RamJET II\1) Current Programs\RamJet V0 R44.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\ramjetII\ramjetII.issx"
     set truckConfigFile=X:\Workgroup\Programming\Script Iqan\Script Programming\ramjetII\
     EXIT /B
 :switchImpact
     ::impact    
     ECHO impact
-    set IQANfile="X:\Workgroup\Programming\6.2) Impact\1) Current Program\Impact V0 R54.idax"
+    set IQANfile="X:\Workgroup\Programming\6.2) Impact\1) Current Program\Impact V0 R55.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\impact\impact.issx"
     set truckConfigFile=X:\Workgroup\Programming\Script Iqan\Script Programming\impact\
     EXIT /B
@@ -209,7 +209,7 @@ cls
 :switchFLXX
     ::flxx
     ECHO FLXX
-    set IQANfile="X:\Workgroup\Programming\1.3) FLXX\1) Current Program\FLXX V0 R19.idax"
+    set IQANfile="X:\Workgroup\Programming\1.3) FLXX\1) Current Program\FLXX V0 R20.idax"
     set IQANscript="X:\Workgroup\Programming\Script Iqan\Script Programming\FLXX\FLXX.issx"
     set truckConfigFile=X:\Workgroup\Programming\Script Iqan\Script Programming\FLXX\
     EXIT /B
